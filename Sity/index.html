@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="src/css/responsive_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Actor|Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
+    <title>Sity</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="header__nav top-nav">
+          <div class="top-nav_child top-nav__left">
+            <ul class="alignment_help">
+              <li class="menu_dropdown"><button id="btn"><img src="src/assets/images/bars.svg" alt="bars_icon"></button></li>
+              <li class="logo"><a href="#"><img src="src/assets/images/logo.svg" alt="logo"></a></li>
+              <li>
+                <form action="">
+                  <!-- <img src="src/assets/images/search.svg" class="search_icon" alt="search_icon">!-->
+                  <input type="text" class="header__input" placeholder="Search "></input>
+                  <select class="header__select">
+                    <option value="city_1">New York</option>
+                    <option value="city_2">London</option>
+                    <option value="city_3">Paris</option>
+                  </select>
+                </form>
+              </li>
+            </ul>
+          </div>
+          <div class="top-nav_child top-nav__right">
+            <ul>
+              <li class="header__menu-item"><a href="#"><img src="src/assets/images/question-circle-o.svg" alt="question_icon" class="top-nav__right__icon"><span class="header__menu-item-span">Help</span></a></li>
+              <li class="header__menu-item"><a href="#"><img src="src/assets/images/star.svg" alt="star_icon" class="top-nav__right__icon"><span class="header__menu-item-span">Favorites</span></a></li>
+              <li class="header__menu-item"><a href="#"><img src="src/assets/images/shopping-cart.svg" alt="shopping_cart_icon" class="top-nav__right__icon"><span class="header__menu-item-span">Cart</span></a></li>
+              <li class="header__menu-item"><button type="button" name="button"><img src="src/assets/images/User Circle Outline.svg" alt="user_icon" class="top-nav__right__icon"><span class="header__menu-item-span">Log in | Register</span></button></li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="header__nav bottom-nav">
+          <ul class="bottom-nav_ul" id="menu">
+            <li><a href="#" class="bottom-nav__menu-item">TOURS</a></li>
+            <li><a href="#" class="bottom-nav__menu-item">ATTRACTIONS</a></li>
+            <li><a href="#" class="bottom-nav__menu-item">MUSEUMS</a></li>
+            <li><a href="#" class="bottom-nav__menu-item">DISCOUNT PASSES</a></li>
+            <li><a href="#" class="bottom-nav__menu-item">NEIGHBORHOODS</a></li>
+          </ul>
+        </nav>
+        <nav  class="header__menu-category">
+          <ul class="padding_left">
+            <li><a href="#">Category</a></li>
+            <li class="red_color"><span><pre> > </pre></span></li>
+            <li class="current_page"><span>Tours</span></li>
+            <li class="page"><span>ATTRACTIONS</span></li>
+            <li class="page"><span>MUSEUMS</span></li>
+            <li class="page"><span>DISCOUNT PASSES</span></li>
+            <li class="page"><span>NEIGHBORHOODS</span></li>
+          </ul>
+      </header>
+      <main class="main">
+        <h1 class="padding_left">New York City Museums</h1>
+        <section class="slider" id="slider">
+          <div class="slides slides_animation">
+            <img src="src/assets/images/slide_1.png" alt="slide nmb 1">
+          </div>
+          <div class="slides slides_animation">
+            <img src="src/assets/images/slide_2.png" alt="slide nmb 2">
+          </div>
+          <div class="slides slides_animation">
+            <img src="src/assets/images/slide_3.png" alt="slide nmb 3">
+          </div>
+          <a class="prev" onclick="plusSlides(-1)"><img src="src/assets/images/chevron-left.svg" alt="prev slide" class="chevron_icon chevron_left"></a>
+          <a class="next" onclick="plusSlides(1)"><img src="src/assets/images/chevron-left.svg" alt="next slide" class="chevron_icon"></a>
+        </section>
+        <aside class="filters padding_left" id="aside_sticky">
+            <h2>Museums</h2>
+            <div class="filters__form" id="filers_form">
+              <div class="filters_menu_exit"><span class="filers_x" tabindex="0" id="filters_btn_exit">Filters<img src="src/assets/images/x.svg" class="x_svg"></span></div>
+              <div class="select select_1" tabindex="0" id="dropdown1">
+                <span class="filters__span">Subcategories<img src="src/assets/images/minus.svg" alt="minus" class="minus"></span><img src="src/assets/images/chevron-down.svg" alt="chevron_down" class="chevron_down">
+                <form class="select select_ select_1_1 sel_none" id="dd_cell_1">
+                  <label><input type="checkbox" name="cb_3" value="">Art Museum</label>
+                  <label><input type="checkbox" name="cb_3" value="">Histori Museum</label>
+                  <label><input type="checkbox" name="cb_3" value="">Outdoor Museum</label>
+                </form>
+              </div>
+              <div class="select select_2" tabindex="0" id="dropdown2">
+                <span class="filters__span">Neighborhoods<img src="src/assets/images/minus.svg" alt="minus" class="minus"></span><img src="src/assets/images/chevron-down.svg" alt="chevron_down" class="chevron_down">
+                <form class="select select_ select_2_2 sel_none" id="dd_cell_2">
+                  <label><input type="checkbox" name="cb_3" value="">Flatiron</label>
+                  <label><input type="checkbox" name="cb_3" value="">Chelsea</label>
+                  <label><input type="checkbox" name="cb_3" value="">Financial District</label>
+                  <label><input type="checkbox" name="cb_3" value="">Upper East Side</label>
+                  <label><input type="checkbox" name="cb_3" value="">Upper West Side </label>
+                </form>
+              </div>
+              <div class="select select_3" tabindex="0" id="dropdown3">
+                  <span class="filters__span">Duration<img src="src/assets/images/minus.svg" alt="minus" class="minus"></span><img src="src/assets/images/chevron-down.svg" alt="chevron_down" class="chevron_down">
+                <form class="select select_ select_3_3 sel_none" id="dd_cell_3">
+                  <label><input type="checkbox" name="cb_3" value="">Up to 1 Hour</label>
+                  <label><input type="checkbox" name="cb_3" value="">1-6 Hours</label>
+                  <label><input type="checkbox" name="cb_3" value="">4 Hours to 1 Day</label>
+                  <label><input type="checkbox" name="cb_3" value="">More Then 1 Day</label>
+                </form>
+              </div>
+              <div class="filers_resp_btns">
+                <button type="reset" class="filers_resp_btns_prop" id="reset">Reset</button>
+                <button class="filers_resp_btns_prop go_btn">Go</button>
+              </div>
+            </div>
+            <button type="button" class="filters_btn btn1" id="map_btn">Map</button>
+            <button type="button" class="filters_btn btn2" id="filters_btn">Filter</button>
+        </aside>
+        <section class="main_items">
+          <aside class="main_items__aside">
+            <span class="main_items__result">38 results</span>
+            <select class="main_items__select">
+              <option value="hid" hidden>Sort by</optin>
+              <option value="one">one</option>
+              <option value="two">two</option>
+              <option valut="three">three</option>
+            </select>
+          </aside>
+          <a href="#" class="main_items__item">
+            <figure>
+              <p><img src="src/assets/images/item1.png" alt="item 1"></p>
+              <figcaption>
+                <p class="font_actor_19_22">NYC Museum of Art Tour with Skip-the-Line Access</p>
+                <p class="font_actor_18_21_blue">from $26 per person</p>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#" class="main_items__item">
+            <figure>
+              <p><img src="src/assets/images/item1.png" alt="item 1"></p>
+              <figcaption>
+                <p class="font_actor_19_22">NYC Museum of Art Tour with Skip-the-Line Access</p>
+                <p class="font_actor_18_21_blue">from $26 per person</p>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#" class="main_items__item">
+            <figure>
+              <p><img src="src/assets/images/item1.png" alt="item 1"></p>
+              <figcaption>
+                <p class="font_actor_19_22">NYC Museum of Art Tour with Skip-the-Line Access</p>
+                <p class="font_actor_18_21_blue">from $26 per person</p>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#" class="main_items__item">
+            <figure>
+              <p><img src="src/assets/images/item1.png" alt="item 1"></p>
+              <figcaption>
+                <p class="font_actor_19_22">NYC Museum of Art Tour with Skip-the-Line Access</p>
+                <p class="font_actor_18_21_blue">from $26 per person</p>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#" class="main_items__item">
+            <figure>
+              <p><img src="src/assets/images/item1.png" alt="item 1"></p>
+              <figcaption>
+                <p class="font_actor_19_22">NYC Museum of Art Tour with Skip-the-Line Access</p>
+                <p class="font_actor_18_21_blue">from $26 per person</p>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#" class="main_items__item">
+            <figure>
+              <p><img src="src/assets/images/item1.png" alt="item 1"></p>
+              <figcaption>
+                <p class="font_actor_19_22">NYC Museum of Art Tour with Skip-the-Line Access</p>
+                <p class="font_actor_18_21_blue">from $26 per person</p>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#" class="main_items__item">
+            <figure>
+              <p><img src="src/assets/images/item1.png" alt="item 1"></p>
+              <figcaption>
+                <p class="font_actor_19_22">NYC Museum of Art Tour with Skip-the-Line Access</p>
+                <p class="font_actor_18_21_blue">from $26 per person</p>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#" class="main_items__item">
+            <figure>
+              <p><img src="src/assets/images/item1.png" alt="item 1"></p>
+              <figcaption>
+                <p class="font_actor_19_22">NYC Museum of Art Tour with Skip-the-Line Access</p>
+                <p class="font_actor_18_21_blue">from $26 per person</p>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#" class="main_items__item">
+            <figure>
+              <p><img src="src/assets/images/item1.png" alt="item 1"></p>
+              <figcaption>
+                <p class="font_actor_19_22">NYC Museum of Art Tour with Skip-the-Line Access</p>
+                <p class="font_actor_18_21_blue">from $26 per person</p>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#" class="main_items__item">
+            <figure>
+              <p><img src="src/assets/images/item1.png" alt="item 1"></p>
+              <figcaption>
+                <p class="font_actor_19_22">NYC Museum of Art Tour with Skip-the-Line Access</p>
+                <p class="font_actor_18_21_blue">from $26 per person</p>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#" class="main_items__item">
+            <figure>
+              <p><img src="src/assets/images/item1.png" alt="item 1"></p>
+              <figcaption>
+                <p class="font_actor_19_22">NYC Museum of Art Tour with Skip-the-Line Access</p>
+                <p class="font_actor_18_21_blue">from $26 per person</p>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#" class="main_items__item">
+            <figure>
+              <p><img src="src/assets/images/item1.png" alt="item 1"></p>
+              <figcaption>
+                <p class="font_actor_19_22">NYC Museum of Art Tour with Skip-the-Line Access</p>
+                <p class="font_actor_18_21_blue">from $26 per person</p>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#" class="main_items__item">
+            <figure>
+              <p><img src="src/assets/images/item1.png" alt="item 1"></p>
+              <figcaption>
+                <p class="font_actor_19_22">NYC Museum of Art Tour with Skip-the-Line Access</p>
+                <p class="font_actor_18_21_blue">from $26 per person</p>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#" class="main_items__item">
+            <figure>
+              <p><img src="src/assets/images/item1.png" alt="item 1"></p>
+              <figcaption>
+                <p class="font_actor_19_22">NYC Museum of Art Tour with Skip-the-Line Access</p>
+                <p class="font_actor_18_21_blue">from $26 per person</p>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#" class="main_items__item">
+            <figure>
+              <p><img src="src/assets/images/item1.png" alt="item 1"></p>
+              <figcaption>
+                <p class="font_actor_19_22">NYC Museum of Art Tour with Skip-the-Line Access</p>
+                <p class="font_actor_18_21_blue">from $26 per person</p>
+              </figcaption>
+            </figure>
+          </a>
+        </section>
+        <section class="map" id="map">
+          <button class="filters_btn map_btn1" id="map_btn1">List</button>
+          <button class="filters_btn map_btn2" id="map_btn2">Filters</button>
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A457d6d04d1d0eece57fe6c39c54bbf269fbeb87d12de095e10b1370b13c98f01&amp;source=constructor" width="720" height="720" frameborder="0"></iframe>
+        <section>
+      </main>
+    </div>
+    <script type="text/javascript" src="src/js/map_sticky.js"></script>
+    <script type="text/javascript" src="src/js/dropdown.js"></script>
+    <script type="text/javascript" src="src/js/slider.js"></script>
+  </body>
+</html>
