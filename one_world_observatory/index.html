@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/build/css/main.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Actor|Saira+Extra+Condensed:700|Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="/src/assets/fonts/Geomanist-Regular.otf">
+  <title>One World Observatory</title>
+</head>
+<body>
+  <header class="header">
+    <article class="header__article">
+      <h1>One World Observatory</h1>
+      <p class="header__description">Positioned on top of the tallest building in the Western Hemisphere
+         – on levels 100, 101, and 102 of the One World Trade Center building – sits One World Observatory,
+         providing you with unique, panoramic views of New York City, its most iconic sites, and surrounding
+         waters from above 1,250 feet.
+      </p>
+    </article>
+    <figure class="header__figure"><img class="header__img" src="/src/assets/images/Bitmap.png" alt="Observatory_photo"></figure>
+  </header>
+  <main class="main-container">
+    <aside class="main-container__tabs">
+      <div class="tab js-tab-standard" tabindex="1">
+        <span class="tab__heading">Observatory Admissio</span>
+        <span class="tab__descriprtion">from<span class="tab__price">$28</span><br>per person</span>
+      </div>
+      <div class="tab js-tab-priority js-non-active-tab" id="1" tabindex="2">
+        <span class="tab__heading">Priority Observatory</span>
+        <span class="tab__descriprtion">from<br><span class="tab__price">$37</span><br>per person</span>
+      </div>
+    </aside>
+    <section class="main-content">
+      <h2 class="js-Standard">One World Observatory Admission</h2>
+      <h2 class="js-Priority js-display-none">One World Observatory Priority Admission</h2>
+      <p class="main-content__descriprion js-Standard">Standard Admission to One World Observatory</p>
+      <p class="main-content__descriprion js-Priority js-display-none">Priority Admission to One World Observatory</p>
+      <div class="menu">
+        <span class="menu__switch js-choise" tabindex="3">Overview</span>
+        <span class="menu__switch" tabindex="4">Details</span>
+        <span class="menu__switch" tabindex="5">Reviews (32)</span>
+        <span class="menu__switch" tabindex="6">Map</span>
+      </div>
+      <article class="main-content__text js-Standard js-Standard-menu-item">
+        <p>Standard Admission Overview</p><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi, sed consequuntur, ab vel at neque obcaecati accusamus voluptates, libero, iusto. Omnis ratione dignissimos natus dolorem alias ullam aliquam quasi?</p>
+      </article>
+      <article class="main-content__text js-Priority js-Priority-menu-item js-display-none">
+        <p>Priority Admission Overview</p><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi, sed consequuntur, ab vel at neque obcaecati accusamus voluptates, libero, iusto. Omnis ratione dignissimos natus dolorem alias ullam aliquam quasi?</p>
+      </article>
+      <article class="main-content__text js-Standard js-Standard-menu-item js-menu-none">
+        <p>Standard Admission Details</p><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi, sed consequuntur, ab vel at neque obcaecati accusamus voluptates, libero, iusto. Omnis ratione dignissimos natus dolorem alias ullam aliquam quasi?</p>
+      </article>
+      <article class="main-content__text js-Priority js-Priority-menu-item js-menu-none js-display-none">
+        <p>Priority Admission Details</p><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi, sed consequuntur, ab vel at neque obcaecati accusamus voluptates, libero, iusto. Omnis ratione dignissimos natus dolorem alias ullam aliquam quasi?</p>
+      </article>
+      <article class="main-content__text js-Standard js-Standard-menu-item js-menu-none">
+        <p>Standard Admission Reviews</p><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi, sed consequuntur, ab vel at neque obcaecati accusamus voluptates, libero, iusto. Omnis ratione dignissimos natus dolorem alias ullam aliquam quasi?</p>
+      </article>
+      <article class="main-content__text js-Priority js-Priority-menu-item js-menu-none js-display-none">
+        <p>Priority Admission Reviews</p><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi, sed consequuntur, ab vel at neque obcaecati accusamus voluptates, libero, iusto. Omnis ratione dignissimos natus dolorem alias ullam aliquam quasi?</p>
+      </article>
+      <article class="main-content__text js-Standard js-Standard-menu-item js-menu-none">
+        <p>Standard Admission Map</p><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi, sed consequuntur, ab vel at neque obcaecati accusamus voluptates, libero, iusto. Omnis ratione dignissimos natus dolorem alias ullam aliquam quasi?</p>
+      </article>
+      <article class="main-content__text js-Priority js-Priority-menu-item js-menu-none js-display-none">
+        <p>Priority Admission Map</p><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi, sed consequuntur, ab vel at neque obcaecati accusamus voluptates, libero, iusto. Omnis ratione dignissimos natus dolorem alias ullam aliquam quasi?</p>
+      </article>
+    </section>
+    <aside class="book-now">
+      <div class="book-now__heading">From $28</div>
+      <div class="select" tabindex="7">
+        <span class="select__heading">DATE</span>
+        <input class="select__date" type="text" placeholder="Select date">
+        <a class="input-button" title="toggle" data-toggle>
+          <img class="icon-calendar book-now__calendar" src="src/assets/images/calendar.svg" alt="calendar">
+        </a>
+      </div>
+      <div class="select z-index js-tour-select" tabindex="8">
+        <span class="select__heading">TOUR</span>
+        <span class="select__value js-tour-value">Select Tour Option</span>
+        <img class="select__chevron-i" src="/src/assets/images/chevron-down.svg" alt="chevron_down">
+        <div class="select__tour-options js-display-none">
+          <span class="toor-option">Morning</span>
+          <span class="toor-option">Mid-Day</span>
+          <span class="toor-option">Early Afternoon</span>
+          <span class="toor-option">Late Afternoon</span>
+          <span class="toor-option">Early Evening</span>
+          <span class="toor-option">Late Evening</span>
+          <span class="toor-option">Night</span>
+          <span class="toor-option">Over Night</span>
+        </div>
+      </div>
+      <div class="tour-details"></div>
+      <div class="select" tabindex="9">
+        <div class="hidden-div js-open-tickets" tabindex="0"></div>
+        <span class="select__heading">TICKETS</span>
+        <span class="select__value">Select Tickets</span>
+        <img class="select__chevron-i" src="/src/assets/images/chevron-down.svg" alt="chevron_down">
+        <div class="select__ticket-options js-ticket-options">
+          <div class="ticket-option">
+            <span class="ticket-option__variety js-variety">Adult <strong><span class="js-price"></span></strong></span>
+            <div class="ticket-option__amount">
+              <img src="src/assets/images/minus.svg" alt="minus" class="ticket-option__amount-switch js-minus-adult js-plus-minus-disabled">
+              <span class="ticket-option__amount-number js-tickets-adult">0</span>
+              <img src="src/assets/images/plus.svg" alt="plus" class="ticket-option__amount-switch js-plus-adult">
+            </div>
+          </div>
+          <div class="ticket-option">
+            <span class="ticket-option__variety js-variety">Senior <strong><span class="js-price"></span></strong></span>
+            <div class="ticket-option__amount">
+              <img src="src/assets/images/minus.svg" alt="minus" class="ticket-option__amount-switch js-minus-senior js-plus-minus-disabled">
+              <span class="ticket-option__amount-number js-tickets-senior">0</span>
+              <img src="src/assets/images/plus.svg" alt="plus" class="ticket-option__amount-switch js-plus-senior">
+            </div>
+          </div>
+          <div class="ticket-option">
+            <span class="ticket-option__variety js-variety">Youth <strong><span class="js-price"></span></strong></span>
+            <div class="ticket-option__amount">
+              <img src="src/assets/images/minus.svg" alt="minus" class="ticket-option__amount-switch js-minus-youth js-plus-minus-disabled">
+              <span class="ticket-option__amount-number js-tickets-youth">0</span>
+              <img src="src/assets/images/plus.svg" alt="plus" class="ticket-option__amount-switch js-plus-youth">
+            </div>
+          </div>
+          <div class="ticket-option">
+            <span class="ticket-option__variety">Child <strong>Free</strong></span>
+            <div class="ticket-option__amount">
+              <img src="src/assets/images/minus.svg" alt="minus" class="ticket-option__amount-switch js-minus-child js-plus-minus-disabled">
+              <span class="ticket-option__amount-number js-tickets-child">0</span>
+              <img src="src/assets/images/plus.svg" alt="plus" class="ticket-option__amount-switch js-plus-child">
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="subtotal js-subtotal">Subtotal:</span>
+      <button class="book-now__btn js-btn">Book Now</button>
+      <div class="text-to-phone js-display-none">
+        <span class="text-to-phone__heading">Text to Phone <img src="src/assets/images/x.svg" alt="x" class="text-to-phone__x js-x"></span>
+        <figure class="text-to-phone__figure"><img src="src/assets/images/small_png.png" alt="city" class="text-to-phone__img"><figcaption class="text-to-phone__figcaption"><span class="figcaption__head">One World Observatory Admission</span><span class="figcaption__foot">from $26 per person</span></figcaption></figure>
+        <span class="text-to-phone__description">Text a link to your phone so we can notify you about the event<br><br>You chose:</span>
+        <div class="text-to-phone__results">
+          <span class="adult-result">Adult: </span>
+          <span class="senior-result">Senior: </span>
+          <span class="youth-result">Youth: </span>
+          <span class="child-result">Child: </span>
+          <span class="subtotal-result">Subtotal: </span>
+        </div>
+        <input type="number" class="text-to-phone__input" placeholder="Phone Number">
+        <button class="text-to-phone__btn">Book Now</button>
+      </div>
+    </aside>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="/build/js/main.js"></script>
+</body>
+</html>

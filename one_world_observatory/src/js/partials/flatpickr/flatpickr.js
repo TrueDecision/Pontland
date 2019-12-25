@@ -1,0 +1,1 @@
+flatpickr(".select__date", {});
